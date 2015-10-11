@@ -1,5 +1,5 @@
 import requests
-url = "https://gdata.youtube.com/feeds/api/standardfeeds/top_rated?alt=json"
+url = "https://raw.githubusercontent.com/koki0702/introducing-python/dummy_api/youTube_top_rated.json"
 response = requests.get(url)
 data = response.json()
 for video in data['feed']['entry'][0:6]:
